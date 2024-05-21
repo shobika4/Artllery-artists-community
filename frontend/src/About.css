@@ -1,0 +1,72 @@
+.about-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  width:1250px;
+  margin: 0 auto;
+  background-color: #fff;
+  background-image: url("about.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Changed to white */
+  line-height: 1.6;
+  min-height: 100vh; /* Ensure background fits entire page height */
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #f2c618 ; /* Changed to dark yellow */
+  animation: fadeIn 2s ease-in-out; /* Added animation */
+}
+
+.about-content p {
+  margin: 1em 0;
+  animation: slideIn 1s ease-in-out; /* Added animation */
+}
+
+.about-content h2 {
+  margin: 1.5em 0 0.5em;
+  color: #f2c618;
+  animation: slideIn 1s ease-in-out; /* Added animation */
+}
+
+.about-content ul {
+  list-style: disc;
+  margin: 1em 0 1em 20px;
+}
+
+.about-content li {
+  margin: 0.5em 0;
+  animation: fadeIn 1s ease-in-out; /* Added animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Add a transition effect for the background image */
+.about-container {
+  transition: background 0.5s ease-in-out;
+}

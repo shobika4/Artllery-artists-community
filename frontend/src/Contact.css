@@ -1,0 +1,108 @@
+/* Reset margin and padding for the entire document */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Container for the contact form */
+.login-container {
+    width: 400px; /* Width of the form */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(69, 66, 66, 0.35); /* Semi-transparent background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 0.5s ease forwards;
+}
+
+/* Ensure the background image covers the entire page */
+.page {
+    background-image: url("signup.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the form horizontally and vertically */
+}
+
+/* Animation for sliding in the container */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for the heading */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(244, 244, 249); /* Keep the color intact */
+}
+
+/* Styling the form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    transition: opacity 0.5s ease;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: rgb(244, 244, 249); /* Keep the color intact */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgb(17, 17, 18); /* Change border color on focus */
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(11, 11, 11);
+    color: rgb(250, 254, 254);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e9d010;
+}
+
+/* Link container styling (if any) */
+.link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-container a {
+    color: rgb(7, 7, 7); /* Keep the color intact */
+    transition: color 0.3s ease;
+}
+
+.link-container a:hover {
+    color: #e9d010; /* Change color on hover */
+}

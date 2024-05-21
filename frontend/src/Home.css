@@ -1,0 +1,216 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li button {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: none; /* Remove button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+nav ul li button:hover {
+    color: #ffc107; /* Change to desired hover color */
+}
+
+body {
+    background-color: rgba(6, 2, 12, 0.24);
+    /* Fix background image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.bodycontainer{
+    background-image: url(artback.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-container {
+    position: relative;
+    height: 500px; /* Adjust height based on your design */
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(224, 236, 246, 0.8); /* Adjust opacity */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+}
+
+.overlay-text h2 {
+    margin: 0;
+    color: black;
+}
+
+.overlay-text:hover {
+    background-color: rgba(224, 236, 246, 1); /* Adjust opacity on hover */
+    transform: translate(-50%, -60%); /* Adjust translateY for a slight upward movement */
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px; /* Adjust the padding top and bottom */
+    background-color: #676667;
+    color: white;
+    
+    /*margin-top: 5px;*/
+}
+
+
+.image-container1 {
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between images */
+}
+.image-container2 {
+    background-image: url('image2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between images */
+}
+.image-container3 {
+    background-image: url('image3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between images */
+}
+.image-container4 {
+    background-image: url('image4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between images */
+}
+.image-container5 {
+    background-image: url('image5.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between images */
+}
+.bodycontainer{
+    height:100vh;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-left: 20px;
+  }
+  
+  footer button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    text-decoration: underline;
+  }
